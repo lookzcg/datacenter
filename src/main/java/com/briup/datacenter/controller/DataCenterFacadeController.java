@@ -17,12 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = {"datacenter门面控制器"})
 public class DataCenterFacadeController {
 
-    int a  = 10;
-    int b = 20;
-    int c = 30;
-    int d = 40;
-    String str = "123";
-
     @PostMapping("/datasets")
     public Message createDataSet(){
         return  null;
