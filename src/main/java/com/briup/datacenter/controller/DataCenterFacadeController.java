@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DataCenterFacadeController {
 
     int a  = 10;
+    int b = 20;
 
     @PostMapping("/datasets")
     public Message createDataSet(){
