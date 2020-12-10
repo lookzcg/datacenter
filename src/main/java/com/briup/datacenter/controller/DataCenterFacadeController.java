@@ -21,6 +21,7 @@ public class DataCenterFacadeController {
     int b = 20;
     int c = 30;
     int d = 40;
+    String str = "123";
 
     @PostMapping("/datasets")
     public Message createDataSet(){
