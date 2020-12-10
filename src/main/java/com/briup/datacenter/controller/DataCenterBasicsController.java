@@ -5,9 +5,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @program: datacenter
@@ -20,16 +18,21 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = {"datacenter基础控制器"})
 public class DataCenterBasicsController {
 
+    int a = 10;
+
     @ApiOperation("新建数据集接口")
     @ApiImplicitParams(
-            @ApiImplicitParam(name="",value = "",dataType = "")
+            @ApiImplicitParam(name="type",value = "用来表示状态",dataType = "String")
     )
     @PostMapping("/datasets")
-    public Message createDataSet(){
+    public Message createDataSet(@RequestParam("type") String type){
         return  null;
     }
 
-
+    @DeleteMapping("/datasets")
+    public Message deleteDataSet(@PathVariable("dataset_id") String id){
+        return null;
+    }
 
 
 }
