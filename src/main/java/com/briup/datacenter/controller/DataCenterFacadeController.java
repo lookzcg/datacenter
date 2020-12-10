@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "facade",headers = {"Content-Type=application/json"})
 @Api(tags = {"datacenter门面控制器"})
 public class DataCenterFacadeController {
-    int i = 10;
+
     @PostMapping("/datasets")
     public Message createDataSet(){
         return  null;
